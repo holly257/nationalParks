@@ -8,16 +8,34 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+
+<div class="container">
     <h1>National Parks Search</h1>
 
     <form action="">
-        <p>Search by State:</p>
-        <input type="text" id="search" placeholder="Make a search">
-        <p>Max Results</p>
-        <input type="number" id="quantity" placeholder="Default is 10">
+        <section>
+            <p class="inline">Search by State:</p>
+            <input type="text" id="search" placeholder="Make a search">
+        </section>
+        
+        <section>
+            <p class="inline">Number of Results:</p>
+            <input type="number" id="quantity" placeholder="Default is 10">
+        </section>
+        
         <br>
         <button class="submit-btn">Search</button>
     </form>
+
+    <p id="js-error-message" class="error-message"></p>
+
+    <section class="hidden">
+        <h2>Search Results</h2>
+        <ul id="results-list"></ul>
+    </section>
+</div>
+
+    
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
